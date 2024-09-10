@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { OButton } from 'o-ui'
+import Index from './pages/Collapse/index.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import { OButton } from 'o-ui'
     </a>
   </div>
   <OButton>按钮</OButton>
+  <Index />
 </template>
 
 <style scoped>
