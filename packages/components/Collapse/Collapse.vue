@@ -13,11 +13,13 @@ const activeItems = ref<string[]>(props.modelValue)
 const updateActiveItems = (val: string[]) => {
   activeItems.value = val
   emits('update:modelValue', val)
+  emits('change', val)
 }
 
 provide(COLLAPSE_KEY, {
   activeItems,
-  updateActiveItems
+  updateActiveItems,
+  accordion: props.accordion
 })
 
 </script>
